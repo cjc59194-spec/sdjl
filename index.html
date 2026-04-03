@@ -25,7 +25,14 @@ header h1 {
 }
 
 header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slogan {
     font-size: 18px;
+    margin-top: 10px;
+    color: #ddd;
 }
 
 .btn {
@@ -37,6 +44,19 @@ header p {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .section {
@@ -92,9 +112,10 @@ h2 {
 
 <header>
     <h1>🍻 Garibaldi Bar</h1>
-    <p>Chopp gelado, petiscos incríveis e o melhor happy hour!</p>
-    <a class="btn" href="https://wa.me/556236097570" target="_blank">
-        📲 Pedir pelo WhatsApp
+    <p>O melhor happy hour de Goiânia 🍺</p>
+    <div class="slogan">🔥 Peça agora e receba rápido na sua casa!</div>
+    <a class="btn" href="https://wa.me/556236097570?text=Quero%20fazer%20um%20pedido" target="_blank">
+        📲 Fazer Pedido no WhatsApp
     </a>
 </header>
 
@@ -163,7 +184,7 @@ h2 {
 
 <div class="section" style="text-align:center;">
     <h2>🚀 Peça Agora</h2>
-    <a class="btn" href="https://wa.me/556236097570" target="_blank">
+    <a class="btn" href="https://wa.me/556236097570?text=Quero%20fazer%20um%20pedido" target="_blank">
         👉 Fazer Pedido no WhatsApp
     </a>
 </div>
@@ -172,6 +193,10 @@ h2 {
     <p>📍 Goiânia - GO</p>
     <p>© Garibaldi Bar</p>
 </div>
+
+<a class="whatsapp-float" href="https://wa.me/556236097570?text=Quero%20fazer%20um%20pedido" target="_blank">
+    💬 Pedir
+</a>
 
 </body>
 </html>
