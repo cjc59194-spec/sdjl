@@ -8,83 +8,84 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
     color: #fff;
 }
 
 header {
+    padding: 50px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background: #000;
 }
 
 header h1 {
-    font-size: 34px;
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 
 .slogan {
-    color: #00c853;
-    font-size: 18px;
-    margin-top: 10px;
+    color: #25D366;
+    font-size: 16px;
 }
 
-.section {
-    padding: 40px 20px;
+.container {
     max-width: 1100px;
     margin: auto;
-}
-
-.benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
-}
-
-.benefit {
-    background: #1c1c1c;
     padding: 20px;
-    border-radius: 12px;
+}
+
+.highlight {
+    background: #161616;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
-.cardapio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    gap: 25px;
+.highlight h2 {
+    margin-bottom: 10px;
 }
 
-.item {
-    background: #1c1c1c;
-    padding: 15px;
-    border-radius: 12px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #161616;
+    border-radius: 16px;
+    overflow: hidden;
     transition: 0.3s;
 }
 
-.item:hover {
-    transform: translateY(-5px);
+.card:hover {
+    transform: scale(1.03);
 }
 
-.item img {
+.card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
-.item h3 {
-    margin: 10px 0 5px;
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
 }
 
 .btn {
     display: block;
     margin-top: 10px;
-    padding: 10px;
-    background: #25D366;
+    padding: 12px;
+    background: linear-gradient(45deg, #25D366, #1ebe5d);
     text-align: center;
     color: #fff;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
@@ -100,10 +101,10 @@ header h1 {
     font-weight: bold;
 }
 
-.footer {
+footer {
     text-align: center;
-    padding: 30px;
-    background: #000;
+    padding: 20px;
+    color: #aaa;
 }
 
 </style>
@@ -113,58 +114,65 @@ header h1 {
 
 <header>
     <h1>💈 Barbearia Marabá</h1>
-    <div class="slogan">🔥 Corte na régua + atendimento rápido. Agende agora!</div>
+    <div class="slogan">Corte de respeito. Agende em segundos.</div>
 </header>
 
-<div class="section">
-    <h2>🚀 Por que escolher a gente?</h2>
-    <div class="benefits">
-        <div class="benefit">✂️ Cortes modernos<p>Fade, social e estilos atuais</p></div>
-        <div class="benefit">⚡ Agendamento rápido<p>Sem espera, direto pro corte</p></div>
-        <div class="benefit">🔥 Resultado top<p>Você sai no estilo</p></div>
+<div class="container">
+
+    <div class="highlight">
+        <h2>🔥 Atendimento rápido + estilo garantido</h2>
+        <p>Escolha seu corte abaixo e agende direto no WhatsApp sem complicação.</p>
     </div>
-</div>
 
-<div class="section">
-    <h2>💇 Escolha seu corte</h2>
-    <div class="cardapio">
+    <div class="grid">
 
-        <div class="item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1593702288056-fb4c2d1b2e8e">
-            <h3>Degradê (Fade)</h3>
-            <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Degradê">Agendar</a>
+            <div class="card-content">
+                <h3>Degradê (Fade)</h3>
+                <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Degradê">Agendar</a>
+            </div>
         </div>
 
-        <div class="item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed6">
-            <h3>Corte Social</h3>
-            <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Corte%20Social">Agendar</a>
+            <div class="card-content">
+                <h3>Corte Social</h3>
+                <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Corte%20Social">Agendar</a>
+            </div>
         </div>
 
-        <div class="item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486">
-            <h3>Low Fade</h3>
-            <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Low%20Fade">Agendar</a>
+            <div class="card-content">
+                <h3>Low Fade</h3>
+                <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Low%20Fade">Agendar</a>
+            </div>
         </div>
 
-        <div class="item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
-            <h3>Mid Fade</h3>
-            <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Mid%20Fade">Agendar</a>
+            <div class="card-content">
+                <h3>Mid Fade</h3>
+                <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20Mid%20Fade">Agendar</a>
+            </div>
         </div>
 
-        <div class="item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
-            <h3>High Fade</h3>
-            <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20High%20Fade">Agendar</a>
+            <div class="card-content">
+                <h3>High Fade</h3>
+                <a class="btn" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario%20para%20High%20Fade">Agendar</a>
+            </div>
         </div>
 
     </div>
+
 </div>
 
-<div class="footer">
-    <p>© Barbearia Marabá</p>
-</div>
+<footer>
+    © Barbearia Marabá
+</footer>
 
 <a class="whatsapp-float" href="https://wa.me/SEUNUMERO?text=quero%20agendar%20meu%20horario">
 💬 Agendar
